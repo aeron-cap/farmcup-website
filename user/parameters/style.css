@@ -1,0 +1,437 @@
+html {
+  scroll-behavior: smooth;
+}
+body {
+  font-family: 'Product Sans', 'Inter', 'Roboto', sans-serif;
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  background-color: rgb(249, 250, 246);
+  /*background-image: url('././assets/parameters-bg.png');*/
+  /*background-repeat: no-repeat;*/
+}
+
+.home-header {
+  padding-left: 2rem;
+}
+
+
+/* .col-md-2 {
+  border: 1px solid black;
+  width: 100%;
+  margin-left: 10rem;
+} */
+
+/* .col-md-10 {
+  border: 1px solid black;
+} */
+
+/*========================================== SIDENAV CSS ====================================*/
+
+.layout-menu {
+  width: 100%;
+  /* border: 1px solid black; */
+  height: 100%;
+  /* box-shadow: 3px 0px 16px rgb(229, 229, 229); */
+  padding: 1rem;
+  background-color: rgb(216, 247, 220);
+  border-bottom-left-radius: 1rem;
+  border-bottom-right-radius: 1rem;
+
+}
+
+/* --------------- IMAGE LOGO -------------------*/
+.app-brand-demo {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center; 
+}
+
+.app-brand-demo img {
+  max-width: 150px;
+  height: auto;
+}
+/* --------------- END OF IMAGE LOGO ------------*/
+
+/* ----------------- MENU ITEMS ---------------- */
+
+.full-height {
+  height: 100vh;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.menu-inner {
+  flex-direction: column;
+  padding:0;
+}
+
+.menu-item {
+  text-decoration: none;
+  padding: 0.7rem;
+  border-radius: 1.3rem;
+  transition: background-color 0.4s ease-in-out, margin-right 0.2s ease, padding-left 0.2s ease;
+  margin-bottom: 1px;
+}
+
+.menu-item a {
+  text-decoration: none;
+  font-size: 1.2rem;
+}
+
+.menu-text {
+  font-weight: 400;
+  color: black;
+  text-decoration: none;
+}
+
+/* ---- HOVER PROPERTIES ------ */
+
+.menu-item:hover {
+  margin-right: 1rem;
+  padding-left: 2rem;
+  background-color: rgb(192, 229, 168);
+
+  text-decoration: none;
+}
+
+/* .menu-text:hover {
+  color: white;
+} */
+
+
+.active {
+  padding-left: 1rem;
+  background-color: rgb(12, 128, 46);
+}
+
+.active div {
+  color: rgb(212, 243, 212);
+  font-weight: 700;
+}
+
+/* ---- END OF HOVER PROPERTIES ---- */
+
+
+.menu-link.disabled{
+  pointer-events: none;
+  color: rgb(159, 159, 159);
+}
+
+
+.menu-link.disabled .menu-text{
+  pointer-events: none;
+  color: rgb(159, 159, 159);
+}
+
+.menu-link.disabled:hover .menu-text.disabled:hover {
+  /* Remove any hover effects for disabled links */
+  background-color: initial;
+  margin-right: initial;
+  padding-left: initial;
+  box-shadow: none;
+}
+
+
+/* ==================================================== CONTENT ================================================= */
+
+.page-header {
+  /* border: 1px solid green; */
+  margin-top: 1rem;
+  margin-bottom: 0;
+  padding-left: 1rem;
+  border-radius: 1rem;
+  /* background-color: green; */
+}
+/* ------------- HEADER BREADCRUMBS ------------- */
+
+.nav-link {
+  margin: 0;
+  padding: 0;
+}
+
+.nav-link a {
+  font-size: 0.8rem;
+  color: rgb(0, 0, 0);
+  text-decoration: none;
+}
+
+.nav-link a:hover {
+  font-size: 0.8rem;
+  text-decoration: none;
+}
+
+.parameter-name-title  {
+  font-size: 3rem;
+  font-weight: 700;
+  margin-bottom: .5rem;
+  margin-top: 0;
+  color: #000000;
+}
+
+.link-top {
+  margin: 0;
+  padding: 0;
+  color: #000000;
+}
+
+/* ------------ SUBHEAD (DATE AND TIME) ---------- */
+
+.live-clock, .live-date {
+  /* margin-top: 1rem; */
+  /* border: 1px solid pink; */
+  color: rgb(93, 93, 93);
+  font-size: .8rem;
+}
+
+/* ------- END OF SUBHEAD (DATE AND TIME) ------- */
+
+
+
+
+/* ---------------- UPDATED READING ------------- */
+
+.latest-data-container {
+  margin-top: 1rem;
+  padding: 1.2rem;
+  /* border: 1px solid black; */
+  border-radius: 2rem;
+  background-color: #d7fddd;
+  /* box-shadow: 0 4px 13px rgba(199, 199, 199, 0.595);  */
+  /*margin-right: 1.2rem;*/
+}
+
+
+.parameter-name {
+  font-size: 1rem;
+  margin-bottom: 0;
+  font-weight: bold;
+}
+
+.parameter-last-value {
+  margin-top: 0;
+  font-size: 3.5rem;
+  font-weight: bold;
+}
+
+.parameter-last-updated {
+  font-size: 0.75rem;
+  color: rgb(112, 112, 112);
+  margin-bottom: 0;
+  margin-top: 0;
+}
+/* --------- END OF UPDATED READING ----------- */
+
+/* ------------------ FILTER ------------------ */
+
+.filter-head-container {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  /* border: 1px solid black; */
+  display: flex;
+  justify-content: flex-end;
+}
+
+.filter-container {
+  padding: 2rem;
+  display: none; 
+  overflow: hidden;
+  max-height: 0;
+  border-radius: 1rem;
+  border: 1px solid #d2d2d2;
+  background-color: #fffbfb;
+}
+
+.filter-container.visible {
+  max-height: calc(1000px + 2rem);
+  /* padding: 1rem; */
+  display: block;
+}
+
+.f-title {
+  font-weight: bold;
+}
+
+/* ------------ END OF FILTER ---------------- */
+
+/* ------------------ TOP GRID --------------- */
+
+.data-header {
+  padding: 0.5rem;
+  padding-left: 1rem;
+  color: green;
+  border-radius: 0.5rem;
+  /* background-color: green; */
+  margin-bottom: 1rem;
+  font-weight: 700;
+  font-size: 1.5rem;
+  /* box-shadow: 0 8px 8px rgb(226, 226, 226);  */
+  /* border: 1px solid black; */
+}
+.top-grid {
+  margin-top: 2rem;
+  /* padding-left: 1rem; */
+  /* border: 1px solid black; */
+}
+
+/**/
+.top-card {
+  margin-bottom: 2rem;
+  width: 100%;
+  height: 45vh;
+  background-color: rgb(255, 255, 255);
+  border-radius: 0.5rem;
+
+  /*box-shadow: 0 8px 8px rgb(226, 226, 226); */
+
+
+}
+
+
+
+
+/* ---------------------------- PARAMETER TABLE ------------------ */
+
+.parameters {
+  width: 100%;
+  border-collapse: collapse;
+}
+.parameters th, .parameters td {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.12);
+  padding: 1rem;
+  text-align: left;
+}
+.parameters th {
+  padding: 1rem;
+  /* background-color: rgba(69, 69, 69, 0.54); */
+
+  font-weight: 900;
+
+}
+
+.parameters thead {
+  color: rgb(14, 14, 14);
+  /* background-color: black; */
+}
+.parameters tbody tr:nth-child(even) {
+  background-color: rgba(0, 0, 0, 0.04);
+}
+
+.table-container {
+  /*max-height: 400px;*/
+  overflow-y: auto;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 576px) {
+  .top-card {
+    height: 35vh;
+  }
+}
+
+
+/* Adjusted CSS for the sliding down effect on small screens */
+@media (max-width: 768px) {
+  .layout-menu {
+    top: -100%; /* Initially hidden off-screen */
+    left: 0;
+    right: 0;
+    transition: 0.5s ease; /* Smooth transition */
+    padding: 1rem;
+    background-color: rgb(216, 247, 220);
+  }
+
+
+  .top-nav {
+    margin-top: 1em;
+    /* border: 1px solid gray; */
+    border-radius: 0.3rem;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    /* box-shadow: 1px 1px 8px rgba(0, 0, 0, 0.1); */
+  }
+
+  #menuToggleBtn {
+    width: auto;
+    height: auto;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    background-color: #ddd;
+    border: 0;
+  }
+
+  .parameter-name-title-sm {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin: 0;
+  }
+
+  .live-clock, .live-date {
+    font-size: .8rem;
+  }
+}
+
+
+
+/* ------------------------------------ UPDATED PARAMETERS --------------------------------- */
+
+.form-check-label {
+  font-size: 1.2rem;
+  text-align: center;
+  color: rgb(30, 30, 30);
+}
+
+#hiddenMenuItem {
+  display: none;
+}
+
+.hidden {
+  display: none;
+}
+
+
+.col-md-10 {
+  padding-left: 15rem;
+  padding-right: 15rem;
+}
+
+@media (max-width: 767.98px) {
+  .col-md-10 {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+}
+
+
+
+#toggle-filter-btn-a {
+  background-color: white;
+  color: gray;
+  border: none;
+  border-radius: 1rem;
+}
+
+
+.bold-cell {
+    font-weight: bold;
+    background-color: #DCE0E5;
+}
+
+.container {
+    display: flex;
+}
+

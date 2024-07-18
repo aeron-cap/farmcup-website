@@ -1,0 +1,127 @@
+/* styles.css */
+
+body {
+    font-family: 'Product Sans','Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.login-container {
+    display: flex;
+    flex-direction: column; /* Align items vertically */
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.login-header {
+    font-weight: 700;
+    font-size: 3.2rem;
+    margin-bottom: 20px;
+    text-align: left; /* Add some space between header and form */
+}
+
+.login-form {
+    width: 300px;
+}
+
+.md-text-field {
+    margin-bottom: 20px;
+}
+
+.md-text-field label {
+    display: block;
+    margin-bottom: 4px;
+    font-size: 14px;
+    color: #333;
+}
+
+.md-text-field input[type="text"],
+.md-text-field input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.md-button {
+    width: 100%;
+    padding: 12px;
+    font-size: 16px;
+    background-color: #6200ee;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.md-button:hover {
+    background-color: #3700b3;
+}
+
+.md-button:focus {
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(38, 143, 255, 0.5);
+}
+
+
+.divider:after,
+.divider:before {
+content: "";
+flex: 1;
+height: 1px;
+background: #eee;
+}
+.h-custom {
+height: calc(100% - 73px);
+}
+@media (max-width: 450px) {
+.h-custom {
+height: 100%;
+}
+}
+
+.text-white {
+    font-weight: 700;
+}
+
+.form-control {
+    border-radius: 1.2rem;
+}
+
+.login-text {
+    font-size: 2.8rem;
+    font-weight: 700;
+}
+
+.btn-primary {
+    border-radius: 1.3rem;
+    background-color: #086c1e;
+
+}
+
+.bg-primary {
+    background-color: #086c1e !important;
+}
+
+.custom-checkbox:checked {
+    background-color: #086c1e !important;
+    border-color: #086c1e !important;
+}
+
+.btn-primary, .btn-primary:hover, .btn-primary:active, .btn-primary:visited {
+    background-color: #086c1e !important;
+}
+
+
+.btn-center {
+    margin: 0 auto;
+    display: block; 
+}
+
+.custom-popup {
+    background-color: rgba(255, 255, 255, 0.8); 
+    border: 2px solid rgba(0, 0, 0, 0.2);
+}
