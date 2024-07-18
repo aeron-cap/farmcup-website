@@ -1,6 +1,7 @@
 # farmcup-website
-**BS Computer Engineering Thesis - FarmCup Website**
+**BS Computer Engineering Thesis**
 
+A website for our beneficiary Farm Cup Sampaga
 
 ![THESIS-POSTER](https://github.com/user-attachments/assets/3fd26093-4b6e-4aeb-bfa3-bef5969afc0e)
 
